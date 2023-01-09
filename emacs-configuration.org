@@ -345,8 +345,11 @@ We can use quickrun package to execute code (if it has main). E.g. If you have a
 Nice tool to draw UML diagrams.Install it now...
 
 #+BEGIN_SRC emacs-lisp
-(use-package plantml :ensure t)
+(use-package plantuml-mode :ensure t)
 #+END_SRC
+
+#+RESULTS:
+
 ** Graphviz
 Required to draw graph like diagrams
 
