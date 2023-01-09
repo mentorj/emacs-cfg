@@ -134,6 +134,23 @@ Enables integration with  X clipboard from Emacs
 
 If you press F6 key in your keyboard, it should switch between doom-palenight and doom-acario-light themes. If you want to go back to the default theme press ~Ctrl + C and F6~.
 
+** All the icons 
+Use the nice package all-the-icons
+
+#+BEGIN_SRC emacs-lisp
+(use-package all-the-icons :ensure t :if (display-graphic-p))
+#+END_SRC
+
+#+RESULTS:
+
+** Modeline
+Use the doom-modeline , very pleasant & useful
+#+BEGIN_SRC emacs-lisp
+(use-package doom-modeline
+  :ensure t
+  :init (doom-modeline-mode 1))
+#+END_SRC
+
 ** Disable ansi color in compilation mode
    This will help eliminate weird escape sequences during compilation of projects.
    #+begin_src emacs-lisp
